@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Text?>
+
+<fx:root prefHeight="1000.0" prefWidth="1440.0" stylesheets="@style.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <StackPane fx:id="stack" layoutY="115.0" prefHeight="819.0" prefWidth="1440.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <AnchorPane fx:id="paymentDone" prefHeight="1686.0" prefWidth="1440.0" styleClass="background">
+               <children>
+                  <Button fx:id="buttonHome" layoutX="663.0" layoutY="667.0" mnemonicParsing="false" onMouseClicked="#backToHome" prefHeight="44.0" prefWidth="170.0" text="Tillbaka hem">
+                     <styleClass>
+                        <String fx:value="base_button" />
+                        <String fx:value="h4" />
+                     </styleClass>
+                  </Button>
+                  <Text layoutX="584.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Köpet är genomfört" />
+                  <Pane layoutX="485.0" layoutY="263.0" prefHeight="332.0" prefWidth="251.0" styleClass="secondary_background">
+                     <children>
+                        <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h4" text="Information" />
+                        <Text fx:id="textReceiptName" layoutX="28.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h4" text="Namn Namnsson " wrappingWidth="137.51953125" />
+                        <Text fx:id="textReceiptAddress" layoutX="28.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h4" text="Adressgatan 123" wrappingWidth="137.51953125" />
+                        <Text layoutX="22.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h4" text="Fakturaadress" wrappingWidth="121.44531250000011" />
+                        <Text layoutX="22.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h4" text="**** **** ****" wrappingWidth="121.44531250000011" />
+                        <Text fx:id="textReceiptBillingAddress" layoutX="33.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h4" text="Leveransadress: " wrappingWidth="137.51953125" />
+                        <Text layoutX="22.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h4" text="Kortnummer" wrappingWidth="121.44531250000011" />
+                        <Text layoutX="28.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h4" text="Ordernummer" wrappingWidth="109.96000671386719" />
+                        <Text fx:id="textReceiptOrderNumber" layoutX="143.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h4" text="1231244" wrappingWidth="85.798828125" />
+                        <Text fx:id="textReceiptCardNumber" layoutX="149.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h4" text="****" wrappingWidth="42.63999938964844" />
+                        <Text fx:id="textReceiptPostArea" layoutX="33.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h4" text="Göteborg" wrappingWidth="67.96875" />
+                        <Text fx:id="textReceiptPostCode" layoutX="126.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h4" text="414 XX" wrappingWidth="60.251953125" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="775.0" layoutY="261.0" prefHeight="332.0" prefWidth="236.0" styleClass="secondary_background">
+                     <children>
+                        <Text fx:id="textReceiptTotal" layoutX="125.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:" />
+                        <Text layoutX="36.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:" />
+                        <TextArea fx:id="cartTextArea" editable="false" prefHeight="291.0" prefWidth="236.0" />
+                     </children>
+                  </Pane>
+                  <Group layoutX="630.0" layoutY="772.0">
+                     <children>
+                        <Circle fill="#9bc1bc" radius="32.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text layoutX="-5.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #fff;" styleClass="h3" text="1" />
+                        <Line endX="-6.0" layoutX="221.0" startX="-45.0" />
+                        <Circle fill="#9bc1bc" layoutX="128.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text layoutX="123.0" layoutY="8.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #fff;" styleClass="h3" text="2" />
+                        <Circle fill="#9bc1bc" layoutX="256.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Line endX="-6.0" layoutX="87.0" startX="-45.0" />
+                        <Text layoutX="251.0" layoutY="7.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #fff;" styleClass="h3" text="3" />
+                     </children>
+                  </Group>
+                  <SVGPath fx:id="SVG_check" fill="#50d96c00" layoutX="890.0" layoutY="122.0" stroke="#52eb7300" />
+                  <Text layoutX="588.0" layoutY="828.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Leverans" />
+                  <Text layoutX="862.0" layoutY="828.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Klart!" />
+                  <Text layoutX="715.0" layoutY="828.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Betalning" />
+               </children>
+            </AnchorPane>
+                <AnchorPane fx:id="buyerInfo" prefHeight="200.0" prefWidth="1440.0" styleClass="background">
+               <children>
+                  <TextField fx:id="textFieldBillingName" layoutX="333.0" layoutY="262.0" onKeyPressed="#removeError" styleClass="base_text_field" />
+                  <TextField fx:id="textFieldBillingAddress" layoutX="333.0" layoutY="348.0" onKeyPressed="#removeError" styleClass="base_text_field" />
+                  <TextField fx:id="textFieldBillingPostNumber" layoutX="333.0" layoutY="434.0" onKeyPressed="#removeError" promptText="xxx xx" styleClass="base_text_field" />
+                  <CheckBox fx:id="checkBoxUseUserInformation" layoutX="333.0" layoutY="550.0" mnemonicParsing="false" onAction="#doNotUseUserInformation" text="Använd INTE leveransinformation.">
+                     <styleClass>
+                        <String fx:value="h4" />
+                        <String fx:value="base_check_box" />
+                     </styleClass>
+                  </CheckBox>
+                  <ComboBox fx:id="comboBoxCardType" layoutX="780.0" layoutY="262.0" prefHeight="55.0" prefWidth="245.0">
+                     <styleClass>
+                        <String fx:value="base_combo_box" />
+                        <String fx:value="h3" />
+                     </styleClass>
+                  </ComboBox>
+                  <ComboBox fx:id="comboBoxExpressionDateYear" layoutX="780.0" layoutY="345.0" prefHeight="55.0" prefWidth="138.0">
+                     <styleClass>
+                        <String fx:value="base_combo_box" />
+                        <String fx:value="h3" />
+                     </styleClass>
+                  </ComboBox>
+                  <ComboBox fx:id="comboBoxExpressionDateMonth" layoutX="941.0" layoutY="344.0" prefHeight="55.0" prefWidth="170.0">
+                     <styleClass>
+                        <String fx:value="base_combo_box" />
+                        <String fx:value="h3" />
+                     </styleClass>
+                  </ComboBox>
+                  <Text layoutX="181.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_text_field_label" text="Fakturaadress:" />
+                  <Text layoutX="542.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Betalningsinformation" />
+                  <Text fx:id="textFieldPostNumberBilling" layoutX="118.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_text_field_label" text="Faktura postnummer:" />
+                  <Text layoutX="643.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_text_field_label" text="Kortnummer:" />
+                  <TextField fx:id="textFieldCardNumber1" layoutX="781.0" layoutY="433.0" onKeyPressed="#limitTextFields" prefHeight="25.0" prefWidth="82.0" styleClass="base_text_field" />
+                  <TextField fx:id="textFieldCardNumber2" layoutX="898.0" layoutY="434.0" onKeyPressed="#limitTextFields" prefHeight="25.0" prefWidth="82.0" styleClass="base_text_field" />
+                  <TextField fx:id="textFieldCardNumber3" layoutX="1010.0" layoutY="430.0" onKeyPressed="#limitTextFields" prefHeight="55.0" prefWidth="82.0" styleClass="base_text_field" />
+                  <TextField fx:id="textFieldCardNumber4" layoutX="1120.0" layoutY="430.0" onKeyPressed="#limitTextFields" prefHeight="55.0" prefWidth="82.0" styleClass="base_text_field" />
+                  <TextField fx:id="textFieldCVC" layoutX="1141.0" layoutY="495.0" onKeyPressed="#limitCVC" prefHeight="55.0" prefWidth="60.0" styleClass="base_text_field" />
+                  <CheckBox fx:id="checkBoxSaveBilling" layoutX="782.0" layoutY="605.0" mnemonicParsing="false" text="Spara mina bank uppgifter">
+                     <styleClass>
+                        <String fx:value="h4" />
+                        <String fx:value="base_check_box" />
+                     </styleClass>
+                  </CheckBox>
+                  <Text layoutX="1088.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_text_field_label" text="CVC:" />
+                  <Text layoutX="878.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_text_field_label" text="-" wrappingWidth="9.33331298828125" />
+                  <Text layoutX="991.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_text_field_label" text="-" wrappingWidth="9.33331298828125" />
+                  <Text layoutX="1102.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_text_field_label" text="-" wrappingWidth="9.33331298828125" />
+                  <Text layoutX="190.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_text_field_label" text="Fakturanamn:" />
+                  <Text layoutX="623.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_text_field_label" text="Utgångsdatum:" />
+                  <Text layoutX="724.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_text_field_label" text="Kort:" />
+                  <Button fx:id="gotoPaymentDone" layoutX="783.0" layoutY="652.0" mnemonicParsing="false" onAction="#gotoPaymentDone" prefHeight="44.0" prefWidth="225.0" text="Genomför köp">
+                     <styleClass>
+                        <String fx:value="base_button" />
+                        <String fx:value="h2" />
+                     </styleClass>
+                  </Button>
+                  <Group layoutX="566.0" layoutY="800.0">
+                     <children>
+                        <Circle fill="#9bc1bc" radius="32.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text layoutX="-5.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #fff;" styleClass="h3" text="1" />
+                        <Line endX="-6.0" layoutX="219.0" startX="-45.0" />
+                        <Circle fill="#9bc1bc" layoutX="128.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text layoutX="123.0" layoutY="8.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #fff;" styleClass="h3" text="2" />
+                        <Circle fill="WHITE" layoutX="256.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Line endX="-6.0" layoutX="88.0" startX="-45.0" />
+                        <Text layoutX="251.0" layoutY="7.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="3" />
+                     </children>
+                  </Group>
+                  <Text fx:id="errorMsgPostNrBilling" layoutX="333.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <styleClass>
+                        <String fx:value="h3" />
+                        <String fx:value="error_msg" />
+                     </styleClass>
+                  </Text>
+                  <Text fx:id="errorMsgCVC" layoutX="1220.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <styleClass>
+                        <String fx:value="h3" />
+                        <String fx:value="error_msg" />
+                     </styleClass>
+                  </Text>
+                  <Text fx:id="errorMsgCardNr" layoutX="1220.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <styleClass>
+                        <String fx:value="h3" />
+                        <String fx:value="error_msg" />
+                     </styleClass>
+                  </Text>
+                  <Text fill="RED" layoutX="1015.0" layoutY="622.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Inte obligatoriskt" />
+                  <Button layoutX="99.0" layoutY="88.0" mnemonicParsing="false" onAction="#backToDelivernce" text="Tillbaka">
+                     <styleClass>
+                        <String fx:value="base_button" />
+                        <String fx:value="h3" />
+                     </styleClass>
+                  </Button>
+                  <Text layoutX="333.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="Fakturering" />
+                  <Text layoutX="782.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="Betalnings Kort" />
+                  <Text layoutX="525.0" layoutY="855.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Leverans" />
+                  <Text layoutX="798.0" layoutY="855.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Klart!" />
+                  <Text layoutX="652.0" layoutY="855.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Betalning" />
+               </children>
+            </AnchorPane>
+                <AnchorPane fx:id="deliverInfo" prefHeight="843.0" prefWidth="1440.0" styleClass="background">
+               <children>
+                  <Button fx:id="buttonBuyerInfo" layoutX="775.0" layoutY="705.0" mnemonicParsing="false" onAction="#gotoBuyerInfo" text="Betalningsinformation">
+                     <styleClass>
+                        <String fx:value="base_button" />
+                        <String fx:value="h2" />
+                     </styleClass>
+                  </Button>
+                  <TextField fx:id="textFieldFirstName" layoutX="440.0" layoutY="221.0" onKeyPressed="#removeError" prefHeight="55.0" prefWidth="244.0" styleClass="base_text_field" />
+                  <Text layoutX="330.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_text_field_label" text="Förnamn: " />
+                  <Text layoutX="556.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Leveransinformation" />
+                  <TextField fx:id="textFieldLastName" layoutX="440.0" layoutY="291.0" onKeyPressed="#removeError" styleClass="base_text_field" />
+                  <Text layoutX="320.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_text_field_label" text="Efternamn: " />
+                  <TextField fx:id="textFieldDeliveryAddress" layoutX="440.0" layoutY="365.0" onKeyPressed="#removeError" styleClass="base_text_field" />
+                  <Text layoutX="274.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_text_field_label" text="Leveransadress:" />
+                  <TextField fx:id="textFieldPostNumber" layoutX="440.0" layoutY="447.0" onKeyPressed="#removeError" styleClass="base_text_field" />
+                  <Text layoutX="297.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_text_field_label" text="Postnummer:" />
+                  <TextField fx:id="textFieldPostArea" layoutX="440.0" layoutY="527.0" onKeyPressed="#removeError" styleClass="base_text_field" />
+                  <Text layoutX="348.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_text_field_label" text="Postort:" />
+                  <Text layoutX="824.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="Tid &amp; datum" />
+                  <Text layoutX="750.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_text_field_label" text="Dag:" wrappingWidth="46.0" />
+                  <ComboBox fx:id="ComboBoxDay" layoutX="805.0" layoutY="221.0" minWidth="182.0" prefHeight="25.0" prefWidth="182.0">
+                     <styleClass>
+                        <String fx:value="base_combo_box" />
+                        <String fx:value="h4" />
+                     </styleClass>
+                  </ComboBox>
+                  <RadioButton fx:id="radioButtonMorning" layoutX="805.0" layoutY="312.0" mnemonicParsing="false" text="Morgon">
+                     <styleClass>
+                        <String fx:value="base_radio_button" />
+                        <String fx:value="h3" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton fx:id="radioButtonLunch" layoutX="805.0" layoutY="347.0" mnemonicParsing="false" text="Lunch">
+                     <styleClass>
+                        <String fx:value="base_radio_button" />
+                        <String fx:value="h3" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton fx:id="radioButtonEvening" layoutX="805.0" layoutY="383.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Eftermiddag">
+                     <styleClass>
+                        <String fx:value="base_radio_button" />
+                        <String fx:value="h3" />
+                     </styleClass>
+                  </RadioButton>
+                  <CheckBox fx:id="checkBoxSaveUserInput" layoutX="775.0" layoutY="665.0" mnemonicParsing="false" onAction="#saveUserInput" text="Spara mina uppgifter ">
+                     <styleClass>
+                        <String fx:value="h4" />
+                        <String fx:value="base_check_box" />
+                     </styleClass>
+                  </CheckBox>
+                  <Group layoutX="572.0" layoutY="842.0">
+                     <children>
+                        <Circle fill="#9bc1bc" radius="32.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text layoutX="-6.0" layoutY="8.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #fff;" styleClass="h3" text="1" />
+                        <Line endX="-6.0" layoutX="221.0" startX="-45.0" />
+                        <Circle fill="WHITE" layoutX="128.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text layoutX="123.0" layoutY="8.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="2" />
+                        <Circle fill="WHITE" layoutX="256.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Line endX="-6.0" layoutX="87.0" startX="-45.0" />
+                        <Text layoutX="251.0" layoutY="7.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="3" />
+                     </children>
+                  </Group>
+                  <Text fx:id="errorMsgPostNr" layoutX="701.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <styleClass>
+                        <String fx:value="h3" />
+                        <String fx:value="error_msg" />
+                     </styleClass>
+                  </Text>
+                  <Text fill="RED" layoutX="980.0" layoutY="682.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Inte obligatoriskt" />
+                  <Button layoutX="94.0" layoutY="117.0" mnemonicParsing="false" onAction="#toShoppingCart" text="Till varukorg">
+                     <styleClass>
+                        <String fx:value="base_button" />
+                        <String fx:value="h3" />
+                     </styleClass>
+                  </Button>
+                  <Text layoutX="440.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="Kontaktuppgifter" />
+                  <Text layoutX="533.0" layoutY="895.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Leverans" />
+                  <Text layoutX="804.0" layoutY="895.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Klart!" />
+                  <Text layoutX="660.0" layoutY="895.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Betalning" />
+               </children>
+            </AnchorPane>
+            </children>
+        </StackPane>
+    </children>
+</fx:root>

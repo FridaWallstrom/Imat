@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="126.0" prefWidth="1440.0" style="-fx-background-color: F06543;" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="imatmini.old_unused_files.MenuBarController">
+   <children>
+      <Button fx:id="HomeLogoButton" layoutX="260.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#goToHandlaPage" style="-fx-background-color: none;" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="11.0">
+         <graphic>
+            <ImageView fitHeight="99.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/imatlogowhite.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="ShoppingCartButton" layoutX="1312.0" layoutY="28.0" mnemonicParsing="false" onAction="#goToShoppingCart" prefWidth="29.0" style="-fx-background-color: none;" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="12.0">
+         <graphic>
+            <ImageView fitHeight="92.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/shopping-cart-2--shopping-cart-checkout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="SearchBarNavBar" layoutX="917.0" layoutY="26.0" onAction="#performSearchAction" prefHeight="79.0" prefWidth="387.0" promptText="Sök..." style="-fx-padding: 20;" AnchorPane.bottomAnchor="26.0" AnchorPane.topAnchor="26.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Button fx:id="HandlaButton" layoutX="222.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#goToHandlaPage" style="-fx-background-color: none;" text="Handla" textFill="WHITE" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="222.0" AnchorPane.topAnchor="18.0">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Button>
+      <Button fx:id="RabatterButton" layoutX="430.0" layoutY="16.0" mnemonicParsing="false" onMouseClicked="#goToRabatterPage" style="-fx-background-color: none;" text="Rabatter" textFill="WHITE" AnchorPane.bottomAnchor="16.0" AnchorPane.topAnchor="18.0">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Button>
+      <Button fx:id="HistorikButton" layoutX="681.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#goToHistorikPage" style="-fx-background-color: none;" text="Historik" textFill="WHITE" AnchorPane.bottomAnchor="16.0" AnchorPane.topAnchor="18.0">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

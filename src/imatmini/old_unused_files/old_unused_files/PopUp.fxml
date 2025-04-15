@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import java.lang.String?>
+<fx:root fx:id="detailView" prefHeight="1500.0" prefWidth="1440.0" stylesheets="@../style.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <AnchorPane prefHeight="1000.0" prefWidth="200.0" style="-fx-background-color: red;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="300.0" fitWidth="360.0" layoutX="88.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="170.0" />
+            <Label fx:id="nameLabel" layoutX="104.0" layoutY="41.0" prefHeight="72.0" prefWidth="488.0" text="Mellanmjök fin produkt för allt möjligt" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="descriptionLabel" alignment="TOP_LEFT" layoutX="534.0" layoutY="560.0" prefHeight="85.0" prefWidth="367.0" style="-fx-background-color: white;" text="Description" wrapText="true" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="550.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="contentsLabel" layoutX="79.0" layoutY="573.0" prefHeight="23.0" prefWidth="294.0" style="-fx-background-color: white;" text="Innehållsförteckning" AnchorPane.leftAnchor="79.0" AnchorPane.topAnchor="550.0" />
+            <Button layoutX="980.0" layoutY="18.0" minHeight="70.0" mnemonicParsing="false" prefWidth="250.0" text="Tillbaka" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+            <Pane layoutX="517.0" layoutY="164.0" prefHeight="300.0" prefWidth="650.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="170.0">
+               <children>
+                  <Button layoutX="38.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleAddAction" prefHeight="75.0" prefWidth="250.0" styleClass="base_button" text="Lägg till vara" />
+                  <Button layoutX="361.0" layoutY="196.0" mnemonicParsing="false" onAction="#addFavorite" prefHeight="50.0" prefWidth="220.0" text="Favorisera">
+                     <styleClass>
+                        <String fx:value="favorite_button" />
+                        <String fx:value="base_button" />
+                     </styleClass></Button>
+                  <Label fx:id="prizeLabel" alignment="CENTER" layoutX="273.0" layoutY="89.0" text="437,50 per förpackning">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ecoLabel" layoutX="567.0" layoutY="20.0" text="Ekologisk" textFill="#5cc343">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="brandLabel" layoutX="68.0" layoutY="30.0" prefHeight="23.0" prefWidth="116.0" text="Brand" />
+                  <Button layoutX="528.0" layoutY="204.0" mnemonicParsing="false" onAction="#addFavorite" prefHeight="40.0" prefWidth="40.0" styleClass="remove_background">
+                     <graphic>
+                        <Group>
+                           <children>
+                              <SVGPath id="circle" fx:id="circle" content="M40,60 C42,48 44,30 25,32" />
+                              <SVGPath fx:id="star" content="M40,60 C42,48 44,30 25,32" />
+                           </children>
+                        </Group>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <Label fx:id="originLabel" layoutX="940.0" layoutY="547.0" prefHeight="23.0" prefWidth="116.0" text="Ursprungsland" />
+         </children>
+      </AnchorPane>
+    </children>
+</fx:root>

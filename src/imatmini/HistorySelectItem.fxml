@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Text?>
+
+<fx:root prefHeight="1000.0" prefWidth="1440.0" styleClass="background" stylesheets="@style.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane fx:id="historyItemizedList" hbarPolicy="NEVER" layoutX="312.0" layoutY="217.0" prefHeight="645.0" prefWidth="843.0" styleClass="rounded_corner">
+         <content>
+            <FlowPane fx:id="historyItemizedListFlowPane" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </ScrollPane>
+      <Button layoutX="312.0" layoutY="122.0" mnemonicParsing="false" onMouseClicked="#backToHome" text="Hem ljuva hem!">
+         <styleClass>
+            <String fx:value="base_button" />
+            <String fx:value="h2" />
+         </styleClass></Button>
+      <Text layoutX="683.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Historik" />
+   </children>
+</fx:root>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1100.0" prefWidth="1440.0" stylesheets="@style.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0" />
+      <ScrollPane fx:id="RabbatScroll1" hbarPolicy="NEVER" layoutX="300.0" layoutY="268.0" prefHeight="1006.0" prefWidth="1440.0" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <AnchorPane fx:id="RabbatAnchor2" prefHeight="922.0" prefWidth="1440.0">
+               <children>
+                  <AnchorPane fx:id="AnchorSide2" layoutX="99.0" layoutY="140.0" prefHeight="780.0" prefWidth="1318.0" AnchorPane.bottomAnchor="101.0" AnchorPane.leftAnchor="99.0" AnchorPane.rightAnchor="101.0" AnchorPane.topAnchor="140.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="780.0" stroke="WHITE" strokeType="INSIDE" width="1240.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f06543" height="200.0" layoutX="30.0" layoutY="40.0" stroke="BLACK" strokeType="INSIDE" width="575.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f06543" height="200.0" layoutX="640.0" layoutY="40.0" stroke="BLACK" strokeType="INSIDE" width="575.0" AnchorPane.rightAnchor="103.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f06543" height="505.0" layoutX="30.0" layoutY="249.0" stroke="BLACK" strokeType="INSIDE" width="405.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="883.0" AnchorPane.topAnchor="248.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f06543" height="506.0" layoutX="444.0" layoutY="249.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f06543" height="200.0" layoutX="640.0" layoutY="555.0" stroke="BLACK" strokeType="INSIDE" width="575.0" AnchorPane.rightAnchor="103.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f06543" height="299.0" layoutX="640.0" layoutY="249.0" stroke="BLACK" strokeType="INSIDE" width="575.0" AnchorPane.rightAnchor="103.0" AnchorPane.topAnchor="248.0" />
+                        <ImageView fx:id="RabbatView12" fitHeight="200.0" fitWidth="200.0" layoutX="28.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/imatlogo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="RabbatView13" fitHeight="185.0" fitWidth="185.0" layoutX="406.0" layoutY="52.0" onMouseClicked="#onClick13" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView15" fitHeight="192.0" fitWidth="241.0" layoutX="956.0" layoutY="46.0" onMouseClicked="#onClick15" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView16" fitHeight="281.0" fitWidth="372.0" layoutX="46.0" layoutY="264.0" onMouseClicked="#onClick16" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView17" fitHeight="150.0" fitWidth="390.0" layoutX="35.0" layoutY="600.0" onMouseClicked="#onClick17" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView18" fitHeight="190.0" fitWidth="145.0" layoutX="454.0" layoutY="262.0" onMouseClicked="#onClick18" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView19" fitHeight="195.0" fitWidth="150.0" layoutX="450.0" layoutY="556.0" onMouseClicked="#onClick19" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView20" fitHeight="185.0" fitWidth="185.0" layoutX="653.0" layoutY="561.0" onMouseClicked="#onClick20" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView21" fitHeight="185.0" fitWidth="185.0" layoutX="1018.0" layoutY="565.0" onMouseClicked="#onClick21" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView14" fitHeight="259.0" fitWidth="547.0" layoutX="658.0" layoutY="264.0" onMouseClicked="#onClick14" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="179.0" fitWidth="263.0" layoutX="229.0" layoutY="65.0" onMouseClicked="#onClick13" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="163.0" fitWidth="245.0" layoutX="753.0" layoutY="94.0" onMouseClicked="#onClick15" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="203.0" fitWidth="367.0" layoutX="642.0" layoutY="394.0" onMouseClicked="#onClick14" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="200.0" fitWidth="236.0" layoutX="616.0" layoutY="639.0" onMouseClicked="#onClick20" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="171.0" fitWidth="239.0" layoutX="934.0" layoutY="627.0" onMouseClicked="#onClick21" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="208.0" fitWidth="270.0" layoutX="-13.0" layoutY="530.0" onMouseClicked="#onClick17" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="174.0" fitWidth="239.0" layoutX="418.0" layoutY="640.0" onMouseClicked="#onClick19" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="168.0" fitWidth="268.0" layoutX="371.0" layoutY="336.0" onMouseClicked="#onClick18" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="Text14" layoutX="726.0" layoutY="494.0" onMouseClicked="#onClick14" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" text="Text14">
+                           <font>
+                              <Font size="50.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Text18" layoutX="451.0" layoutY="405.0" onMouseClicked="#onClick18" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Text18">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Text19" layoutX="473.0" layoutY="702.0" onMouseClicked="#onClick19" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Text19">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Text17" layoutX="68.0" layoutY="596.0" onMouseClicked="#onClick17" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Text17">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Text20" layoutX="680.0" layoutY="702.0" onMouseClicked="#onClick20" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Text20">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Text21" layoutX="1000.0" layoutY="692.0" onMouseClicked="#onClick21" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Test21">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Text15" layoutX="819.0" layoutY="158.0" onMouseClicked="#onClick15" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Text15">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Text13" layoutX="285.0" layoutY="134.0" onMouseClicked="#onClick13" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Text13">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="173.0" fitWidth="223.0" layoutX="11.0" layoutY="267.0" onMouseClicked="#onClick16" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="Text16" layoutX="62.0" layoutY="328.0" onMouseClicked="#onClick16" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="aaaaaaa">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="RabbatFortsattHandla" layoutX="43.0" layoutY="119.0" mnemonicParsing="false" onMouseClicked="#clickFortsatthandla" prefHeight="70.0" prefWidth="300.0" styleClass="rabbat_button" text="Fortsätt handla" AnchorPane.leftAnchor="43.0" AnchorPane.topAnchor="119.0">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="RabbatNasta" layoutX="1052.0" layoutY="908.0" mnemonicParsing="false" onMouseClicked="#clickNasta" prefHeight="70.0" prefWidth="260.0" styleClass="rabbat_button" text="Nästa" AnchorPane.rightAnchor="206.0" AnchorPane.topAnchor="908.0">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="RabbatFaregaende" layoutX="122.0" layoutY="908.0" mnemonicParsing="false" onMouseClicked="#clickFaregaende" prefHeight="70.0" prefWidth="300.0" styleClass="rabbat_button" text="Föregående" AnchorPane.leftAnchor="122.0" AnchorPane.topAnchor="908.0">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane fx:id="AnchorSide1" layoutX="99.0" layoutY="140.0" prefHeight="784.0" prefWidth="1318.0" AnchorPane.bottomAnchor="97.0" AnchorPane.leftAnchor="99.0" AnchorPane.rightAnchor="101.0" AnchorPane.topAnchor="140.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="780.0" layoutX="-12.0" stroke="WHITE" strokeType="INSIDE" width="1240.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f06543" height="200.0" layoutX="30.0" layoutY="40.0" stroke="BLACK" strokeType="INSIDE" width="575.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f06543" height="200.0" layoutX="640.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" width="575.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f06543" height="505.0" layoutX="30.0" layoutY="248.0" stroke="BLACK" strokeType="INSIDE" width="405.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="883.0" AnchorPane.topAnchor="248.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f06543" height="506.0" layoutX="444.0" layoutY="249.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f06543" height="200.0" layoutX="640.0" layoutY="555.0" stroke="BLACK" strokeType="INSIDE" width="575.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f06543" height="299.0" layoutX="640.0" layoutY="249.0" stroke="BLACK" strokeType="INSIDE" width="575.0" />
+                        <ImageView fx:id="RabbatView1" fitHeight="200.0" fitWidth="200.0" layoutX="74.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/imatlogo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="RabbatView2" fitHeight="200.0" fitWidth="200.0" layoutX="405.0" layoutY="40.0" onMouseClicked="#onClick2" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView3" fitHeight="200.0" fitWidth="200.0" layoutX="640.0" layoutY="40.0" onMouseClicked="#onClick3" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView4" fitHeight="200.0" fitWidth="200.0" layoutX="1015.0" layoutY="38.0" onMouseClicked="#onClick4" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView5" fitHeight="295.0" fitWidth="387.0" layoutX="34.0" layoutY="258.0" onMouseClicked="#onClick5" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView6" fitHeight="155.0" fitWidth="400.0" layoutX="30.0" layoutY="600.0" onMouseClicked="#onClick6" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView7" fitHeight="198.0" fitWidth="150.0" layoutX="450.0" layoutY="255.0" onMouseClicked="#onClick7" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView8" fitHeight="198.0" fitWidth="152.0" layoutX="450.0" layoutY="556.0" onMouseClicked="#onClick8" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView9" fitHeight="200.0" fitWidth="200.0" layoutX="640.0" layoutY="555.0" onMouseClicked="#onClick9" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView10" fitHeight="200.0" fitWidth="200.0" layoutX="1015.0" layoutY="559.0" onMouseClicked="#onClick10" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="RabbatView11" fitHeight="270.0" fitWidth="568.0" layoutX="644.0" layoutY="260.0" onMouseClicked="#onClick11" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="119.0" fitWidth="232.0" layoutX="383.0" layoutY="148.0" onMouseClicked="#onClick2" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="110.0" fitWidth="299.0" layoutX="575.0" layoutY="158.0" onMouseClicked="#onClick3" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="127.0" fitWidth="271.0" layoutX="854.0" layoutY="145.0" onMouseClicked="#onClick4" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="274.0" fitWidth="769.0" layoutX="549.0" layoutY="340.0" onMouseClicked="#onClick11" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="132.0" fitWidth="208.0" layoutX="625.0" layoutY="669.0" onMouseClicked="#onClick9" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="134.0" fitWidth="254.0" layoutX="1002.0" layoutY="662.0" onMouseClicked="#onClick10" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="187.0" fitWidth="255.0" layoutX="364.0" layoutY="639.0" onMouseClicked="#onClick8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="215.0" fitWidth="232.0" layoutX="505.0" layoutY="301.0" onMouseClicked="#onClick7" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="215.0" layoutY="470.0" onMouseClicked="#onClick5" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="220.0" fitWidth="282.0" layoutX="107.0" layoutY="573.0" onMouseClicked="#onClick6" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Group 59.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="Text2" layoutX="439.0" layoutY="217.0" onMouseClicked="#onClick2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Test1" AnchorPane.topAnchor="177.0">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Text3" layoutX="640.0" layoutY="226.0" onMouseClicked="#onClick2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="test2">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Text4" layoutX="916.0" layoutY="217.0" onMouseClicked="#onClick4" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="test4">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Text11" layoutX="676.0" layoutY="511.0" onMouseClicked="#onClick11" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h100" text="test11">
+                           <font>
+                              <Font size="100.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Text9" layoutX="676.0" layoutY="724.0" onMouseClicked="#onClick9" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Text9">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Text10" layoutX="1061.0" layoutY="730.0" onMouseClicked="#onClick10" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Text10">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Text8" layoutX="455.0" layoutY="706.0" onMouseClicked="#onClick8" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Text8">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Text7" layoutX="561.0" layoutY="362.0" onMouseClicked="#onClick7" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Text7">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Text5" layoutX="36.0" layoutY="531.0" onMouseClicked="#onClick5" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Text5">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Text6" layoutX="199.0" layoutY="652.0" onMouseClicked="#onClick6" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="asdf">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</fx:root>

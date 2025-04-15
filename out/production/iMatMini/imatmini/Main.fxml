@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1440.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="imatmini.MainController">
+    <children>
+        <StackPane prefHeight="1100.0" prefWidth="1440.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="125.0">
+            <children>
+                <AnchorPane fx:id="dynamicPane" prefHeight="1500.0" prefWidth="1440.0">
+                    <children>
+                        <Button layoutX="385.0" layoutY="357.0" mnemonicParsing="false" text="Button" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="detailView" prefHeight="1500.0" prefWidth="1440.0" style="-fx-background-color: #0000009d;">
+                    <children>
+                        <AnchorPane layoutX="70.0" layoutY="72.0" prefHeight="854.0" prefWidth="1270.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="130.0">
+                            <children>
+                                <Pane layoutX="89.0" layoutY="97.0" prefHeight="344.0" prefWidth="370.0" style="-fx-background-color: #ffff;" styleClass="rounded_corner" AnchorPane.leftAnchor="89.0">
+                                    <children>
+                                        <ImageView fx:id="imageView" fitHeight="360.0" fitWidth="360.0" layoutX="8.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/image1honokaka.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </Pane>
+                                <Label fx:id="descriptionLabel" alignment="TOP_LEFT" layoutX="500.0" layoutY="514.0" prefHeight="248.0" prefWidth="654.0" text="label_description_box" wrapText="true" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="514.0">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <styleClass>
+                                        <String fx:value="secondary_background" />
+                                        <String fx:value="label_description_box" />
+                              <String fx:value="rounded_corner" />
+                                    </styleClass>
+                                </Label>
+                                <Label fx:id="contentsLabel" alignment="TOP_LEFT" layoutX="91.0" layoutY="514.0" prefHeight="248.0" prefWidth="366.0" text="label_description_box" wrapText="true" AnchorPane.leftAnchor="91.0" AnchorPane.topAnchor="514.0">
+                                    <styleClass>
+                                        <String fx:value="secondary_background" />
+                                        <String fx:value="label_description_box" />
+                              <String fx:value="rounded_corner" />
+                                    </styleClass>
+                        </Label>
+                                <Button layoutX="994.0" layoutY="16.0" minHeight="70.0" mnemonicParsing="false" onMouseClicked="#closeDetailView" prefWidth="250.0" text="Tillbaka" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="16.0">
+                                    <styleClass>
+                                        <String fx:value="base_button" />
+                                        <String fx:value="h2" />
+                                    </styleClass>
+                        </Button>
+                                <Pane layoutX="517.0" layoutY="98.0" prefHeight="344.0" prefWidth="650.0" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="98.0">
+                                    <children>
+                              <Group fx:id="IncDecGroup" layoutX="36.0" layoutY="244.0">
+                                 <children>
+                                    <Label fx:id="InlineItemAmount1" alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="3.0" prefHeight="76.0" prefWidth="98.0" style="-fx-border-color: black; -fx-background-color: #ccc;" styleClass="h2" text="~¨~" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="InlineItemDecreaseAmount1" layoutY="3.0" mnemonicParsing="false" onAction="#DecreaseAmountOfProduct" prefHeight="76.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black; -fx-padding: 0; -fx-text-fill: black;" text="-">
+                                       <font>
+                                          <Font size="34.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="h1" />
+                                          <String fx:value="base_button" />
+                                          <String fx:value="left" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button fx:id="InlineItemAddAmount1" layoutX="175.0" layoutY="3.0" mnemonicParsing="false" onAction="#addProductToCart" prefHeight="76.0" prefWidth="78.0" style="-fx-background-color: white; -fx-border-color: black; -fx-padding: 0; -fx-text-fill: black;" text="+">
+                                       <font>
+                                          <Font size="34.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="h1" />
+                                          <String fx:value="base_button" />
+                                          <String fx:value="right" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </Group>
+                                        <Button layoutX="36.0" layoutY="247.0" mnemonicParsing="false" onAction="#addProductToCart" prefHeight="75.0" prefWidth="253.0" text="Lägg till vara">
+                                            <styleClass>
+                                                <String fx:value="base_button" />
+                                                <String fx:value="h2" />
+                                    <String fx:value="rounded_corner" />
+                                            </styleClass>
+                              </Button>
+                                        <Button layoutX="367.0" layoutY="246.0" mnemonicParsing="false" onAction="#addFavorite" prefHeight="78.0" prefWidth="265.0" text="Favorisera">
+                                            <styleClass>
+                                                <String fx:value="base_button" />
+                                                <String fx:value="favorite_button" />
+                                                <String fx:value="h2" />
+                                    <String fx:value="rounded_corner" />
+                                            </styleClass>
+                              </Button>
+                                        <Label fx:id="prizeLabel" alignment="CENTER" layoutX="51.0" layoutY="165.0" styleClass="h1" text="437,50 per förpackning">
+                                            <font>
+                                                <Font size="30.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="ecoLabel" layoutX="162.0" layoutY="68.0" styleClass="h3" text="Ekologisk" textFill="#5cc343">
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="brandLabel" layoutX="16.0" layoutY="65.0" prefHeight="23.0" prefWidth="116.0" styleClass="h3" text="Pågen">
+                                            <font>
+                                                <Font name="System Italic" size="12.0" />
+                                            </font>
+                              </Label>
+                                        <Label fx:id="nameLabel" layoutX="11.0" layoutY="8.0" prefHeight="72.0" prefWidth="488.0" text="Mellanmjök fin produkt för allt möjligt">
+                                            <font>
+                                                <Font size="27.0" />
+                                            </font>
+                                        </Label>
+                                        <Button layoutX="571.0" layoutY="283.0" mnemonicParsing="false" onAction="#addFavorite" prefHeight="40.0" prefWidth="40.0" styleClass="remove_background" />
+                                        <Text layoutX="141.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                            <font>
+                                                <Font size="27.0" />
+                                            </font>
+                                        </Text>
+                                        <Label fx:id="originLabel" layoutX="41.0" layoutY="107.0" prefHeight="23.0" prefWidth="116.0" text="Sverige">
+                                            <styleClass>
+                                                <String fx:value="secondary_background" />
+                                                <String fx:value="label_description_box" />
+                                            </styleClass>
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Label>
+                                          <Group layoutX="558.0" layoutY="257.0">
+                                              <children>
+                                                  <SVGPath id="circle" fx:id="circle" content="M40,60 C42,48 44,30 25,32" />
+                                                  <SVGPath id="star" fx:id="star" content="M40,60 C42,48 44,30 25,32" />
+                                              </children>
+                                          </Group>
+                                    </children>
+                           <styleClass>
+                              <String fx:value="secondary_background" />
+                              <String fx:value="rounded_corner" />
+                           </styleClass>
+                                </Pane>
+                                <Text layoutX="89.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Innehåll" textAlignment="CENTER" wrappingWidth="98.0" AnchorPane.leftAnchor="89.0">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="500.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produktbeskrivning" textAlignment="CENTER" wrappingWidth="250.0">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                     <styleClass>
+                        <String fx:value="background" />
+                        <String fx:value="rounded_corner" />
+                     </styleClass>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+                <StackPane prefHeight="1845.0" prefWidth="1437.0">
+                    <children>
+                        <ScrollPane fx:id="scrollPaneForProducts" hbarPolicy="NEVER" prefHeight="1702.0" prefWidth="1440.0">
+                            <content>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <AnchorPane prefHeight="250.0" prefWidth="1430.0">
+                                            <children>
+                                                <GridPane prefHeight="140.0" prefWidth="300.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="55.0">
+                                                    <columnConstraints>
+                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="0.0" prefWidth="280.0" />
+                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="0.0" prefWidth="280.0" />
+                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="0.0" prefWidth="280.0" />
+                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="0.0" prefWidth="280.0" />
+                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="0.0" prefWidth="280.0" />
+                                                    </columnConstraints>
+                                                    <rowConstraints>
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    </rowConstraints>
+                                                    <children>
+                                                        <Button fx:id="allaVaror" mnemonicParsing="false" onAction="#categoryAllaVaror" prefHeight="80.0" prefWidth="280.0" text="Alla varor">
+                                                            <GridPane.margin>
+                                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                            </GridPane.margin>
+                                                            <styleClass>
+                                                                <String fx:value="base_button" />
+                                                                <String fx:value="category_button" />
+                                                <String fx:value="h2" />
+                                                            </styleClass>
+                                                        </Button>
+                                                        <Button fx:id="fruktGront" mnemonicParsing="false" onAction="#categoryFruktGront" prefHeight="80.0" prefWidth="280.0" text="Frukt &amp; grönt" GridPane.columnIndex="1">
+                                                            <GridPane.margin>
+                                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                            </GridPane.margin>
+                                                            <styleClass>
+                                                                <String fx:value="base_button" />
+                                                                <String fx:value="h2" />
+                                                <String fx:value="category_button" />
+                                                            </styleClass>
+                                                        </Button>
+                                                        <Button fx:id="dryck" mnemonicParsing="false" onAction="#categoryDryck" prefHeight="80.0" prefWidth="280.0" text="Dryck" GridPane.columnIndex="2">
+                                                            <GridPane.margin>
+                                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                            </GridPane.margin>
+                                                            <styleClass>
+                                                                <String fx:value="base_button" />
+                                                                <String fx:value="h2" />
+                                                <String fx:value="category_button" />
+                                                            </styleClass>
+                                                        </Button>
+                                                        <Button fx:id="kottFisk" mnemonicParsing="false" onAction="#categoryKottFisk" prefHeight="80.0" prefWidth="280.0" text="Protein" GridPane.columnIndex="3">
+                                                            <GridPane.margin>
+                                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                            </GridPane.margin>
+                                                            <styleClass>
+                                                                <String fx:value="base_button" />
+                                                                <String fx:value="h2" />
+                                                <String fx:value="category_button" />
+                                                            </styleClass>
+                                                        </Button>
+                                                        <Button fx:id="notterFron" mnemonicParsing="false" onAction="#categoryNotterFron" prefHeight="80.0" prefWidth="280.0" text="Nötter &amp; frön" GridPane.columnIndex="4">
+                                                            <GridPane.margin>
+                                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                            </GridPane.margin>
+                                                            <styleClass>
+                                                                <String fx:value="base_button" />
+                                                                <String fx:value="h2" />
+                                                <String fx:value="category_button" />
+                                                            </styleClass>
+                                                        </Button>
+                                                        <Button fx:id="kolhydrater" mnemonicParsing="false" onAction="#categoryKolhydrater" prefHeight="80.0" prefWidth="280.0" text="Kolhydrater" GridPane.rowIndex="1">
+                                                            <GridPane.margin>
+                                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                            </GridPane.margin>
+                                                            <styleClass>
+                                                                <String fx:value="base_button" />
+                                                                <String fx:value="category_button" />
+                                                <String fx:value="h2" />
+                                                            </styleClass>
+                                                        </Button>
+                                                        <Button fx:id="bak" mnemonicParsing="false" onAction="#categoryBak" prefHeight="80.0" prefWidth="280.0" text="Bak" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                            <GridPane.margin>
+                                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                            </GridPane.margin>
+                                                            <styleClass>
+                                                                <String fx:value="base_button" />
+                                                                <String fx:value="h2" />
+                                                <String fx:value="category_button" />
+                                                            </styleClass>
+                                                        </Button>
+                                                        <Button fx:id="kryddor" mnemonicParsing="false" onAction="#categorySnacks" prefHeight="80.0" prefWidth="280.0" text="Snacks" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                            <GridPane.margin>
+                                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                            </GridPane.margin>
+                                                            <styleClass>
+                                                                <String fx:value="base_button" />
+                                                                <String fx:value="h2" />
+                                                <String fx:value="category_button" />
+                                                            </styleClass>
+                                                        </Button>
+                                                        <Button fx:id="mejeri" mnemonicParsing="false" onAction="#categoryMejeri" prefHeight="80.0" prefWidth="280.0" text="Mejeriprodukter" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                            <GridPane.margin>
+                                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                            </GridPane.margin>
+                                                            <styleClass>
+                                                                <String fx:value="base_button" />
+                                                                <String fx:value="h2" />
+                                                <String fx:value="category_button" />
+                                                            </styleClass>
+                                                        </Button>
+                                                        <Button fx:id="favoriter" mnemonicParsing="false" onAction="#categoryFavoriter" prefHeight="80.0" prefWidth="280.0" text="Favoriter" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                                            <GridPane.margin>
+                                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                            </GridPane.margin>
+                                                            <styleClass>
+                                                                <String fx:value="base_button" />
+                                                                <String fx:value="h2" />
+                                                <String fx:value="category_button" />
+                                                            </styleClass>
+                                                        </Button>
+                                                    </children>
+                                                </GridPane>
+                                    <AnchorPane prefHeight="60.0" prefWidth="1440.0" style="-fx-background-color: #efefef;">
+                                       <children>
+                                          <StackPane prefHeight="60.0" prefWidth="500.0">
+                                             <children>
+                                                            <ButtonBar prefHeight="60.0" prefWidth="500.0" style="-fx-background-color: #efefef;">
+                                                                <buttons>
+                                                                    <Button mnemonicParsing="false" onAction="#breadButton1" prefHeight="40.0" prefWidth="200.0" styleClass="breadButt" text="Alla varor " />
+                                                                    <Button fx:id="breadButt2" mnemonicParsing="false" onAction="#breadButton2" prefHeight="51.0" prefWidth="200.0" styleClass="breadButt" text="Button" />
+                                                                    <Button fx:id="breadButt3" mnemonicParsing="false" onAction="#breadButton3" prefHeight="51.0" prefWidth="230.0" styleClass="breadButt" text="Button" />
+                                                                </buttons>
+                                                            </ButtonBar>
+                                                <Text fx:id="arrow1" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="&gt;" x="100.0">
+                                                   <StackPane.margin>
+                                                      <Insets left="-150.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Text fx:id="arrow2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="&gt;">
+                                                   <StackPane.margin>
+                                                      <Insets left="200.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </AnchorPane>
+                                                <ComboBox fx:id="sortComboBox" layoutX="1078.0" layoutY="200.0" prefHeight="35.0" prefWidth="200.0" styleClass="base_combo_box" />
+                                                <AnchorPane fx:id="subcategory" layoutY="250.0" prefHeight="100.0" prefWidth="1440.0">
+                                                    <children>
+                                                        <ButtonBar fx:id="subCategories" buttonMinWidth="150.0" prefHeight="44.0" prefWidth="595.0" AnchorPane.leftAnchor="50.0">
+                                                            <buttons>
+                                                                <Button fx:id="btnSub0" mnemonicParsing="false" onAction="#button0" text="Button">
+                                                                    <styleClass>
+                                                                        <String fx:value="base_button" />
+                                                                        <String fx:value="h3" />
+                                                      <String fx:value="category_button" />
+                                                                    </styleClass>
+                                                </Button>
+                                                                <Button fx:id="btnSub1" mnemonicParsing="false" onAction="#button1" text="Button">
+                                                                    <styleClass>
+                                                                        <String fx:value="base_button" />
+                                                                        <String fx:value="h3" />
+                                                      <String fx:value="category_button" />
+                                                                    </styleClass>
+                                                </Button>
+                                                                <Button fx:id="btnSub2" mnemonicParsing="false" onAction="#button2" text="Button">
+                                                                    <styleClass>
+                                                                        <String fx:value="base_button" />
+                                                                        <String fx:value="h3" />
+                                                      <String fx:value="category_button" />
+                                                                    </styleClass>
+                                                </Button>
+                                                                <Button fx:id="btnSub3" mnemonicParsing="false" onAction="#button3" text="Button">
+                                                                    <styleClass>
+                                                                        <String fx:value="base_button" />
+                                                                        <String fx:value="h3" />
+                                                      <String fx:value="category_button" />
+                                                                    </styleClass>
+                                                </Button>
+                                                                <Button fx:id="btnSub4" mnemonicParsing="false" onAction="#button4" text="Button">
+                                                                    <styleClass>
+                                                                        <String fx:value="base_button" />
+                                                                        <String fx:value="h3" />
+                                                      <String fx:value="category_button" />
+                                                                    </styleClass>
+                                                </Button>
+                                                            </buttons>
+                                                        </ButtonBar>
+                                                    </children>
+                                    </AnchorPane>
+                                            </children>
+                                        </AnchorPane>
+                                        <FlowPane fx:id="productsFlowPane" alignment="TOP_CENTER" columnHalignment="CENTER" hgap="20.0" layoutY="270.0" prefHeight="800.0" prefWidth="1420.0" rowValignment="TOP" styleClass="breadButt" vgap="20.0" />
+                              <AnchorPane fx:id="footerAnchorPane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </ScrollPane>
+                  <Button mnemonicParsing="false" onMouseClicked="#toTopOfScroll" prefHeight="44.0" prefWidth="38.0" styleClass="button_top">
+                     <StackPane.margin>
+                        <Insets left="1300.0" top="700.0" />
+                     </StackPane.margin>
+                     <graphic>
+                        <Polygon fill="WHITE" points="8.0, 40.0, 25.0, 40.0, 17.0, 26.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                     </graphic>
+                  </Button>
+                    </children>
+                </StackPane>
+            </children>
+        </StackPane>
+        <AnchorPane id="navbar" layoutX="10.0" layoutY="10.0" prefHeight="125.0" prefWidth="1440.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button fx:id="HomeLogoButton" layoutX="260.0" layoutY="68.0" mnemonicParsing="false" onAction="#backHome" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="11.0">
+                    <graphic>
+                        <ImageView fitHeight="99.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/imatlogowhite.png" />
+                            </image>
+                     <styleClass>
+                        <String fx:value="remove_background" />
+                        <String fx:value="hover" />
+                     </styleClass>
+                        </ImageView>
+                    </graphic>
+               <styleClass>
+                  <String fx:value="remove_background" />
+                  <String fx:value="hover" />
+               </styleClass>
+                </Button>
+                <Button fx:id="ShoppingCartButton" layoutX="1312.0" layoutY="28.0" mnemonicParsing="false" onAction="#openShoppingCartFilip" prefWidth="29.0" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="12.0">
+                    <graphic>
+                        <ImageView fitHeight="92.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/shopping-cart-2--shopping-cart-checkout.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+               <styleClass>
+                  <String fx:value="remove_background" />
+                  <String fx:value="hover" />
+               </styleClass>
+                </Button>
+                <TextField fx:id="SearchBarNavBar" layoutX="917.0" layoutY="26.0" onAction="#performSearchAction" prefHeight="79.0" prefWidth="387.0" promptText="Sök..." AnchorPane.bottomAnchor="26.0" AnchorPane.topAnchor="26.0">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="h4" />
+                        <String fx:value="base_text_field" />
+                    </styleClass>
+                </TextField>
+                <Button fx:id="HandlaButton" layoutX="222.0" layoutY="18.0" mnemonicParsing="false" onAction="#backHome" text="Handla" textFill="WHITE" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="222.0" AnchorPane.topAnchor="18.0">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="base_button" />
+                        <String fx:value="big" />
+                    </styleClass>
+                </Button>
+                <Button fx:id="RabatterButton" layoutX="430.0" layoutY="16.0" mnemonicParsing="false" onAction="#openAdvertisment" text="Rabatter" textFill="WHITE" AnchorPane.bottomAnchor="16.0" AnchorPane.topAnchor="18.0">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="base_button" />
+                        <String fx:value="big" />
+                    </styleClass>
+                </Button>
+                <Button fx:id="HistorikButton" layoutX="681.0" layoutY="18.0" mnemonicParsing="false" onAction="#openHistory" text="Historik" textFill="WHITE" AnchorPane.bottomAnchor="16.0" AnchorPane.topAnchor="18.0">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="base_button" />
+                        <String fx:value="big" />
+                    </styleClass>
+                </Button>
+                <Circle fill="#9bc1bc" layoutX="1410.0" layoutY="34.0" radius="15.0" stroke="#ffffff00" strokeType="INSIDE" />
+                <Text fx:id="nbrOfItems" layoutX="1406.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" styleClass="h4" text="1" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

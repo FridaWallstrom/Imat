@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root prefHeight="300.0" prefWidth="1440.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9bc1bc" height="300.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1440.0" />
+      <Text layoutX="189.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" styleClass="h1" text="Kontakta oss" textAlignment="CENTER" AnchorPane.leftAnchor="189.0" AnchorPane.topAnchor="41.0732421875">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="FooterView" fitHeight="200.0" fitWidth="200.0" layoutX="616.0" layoutY="91.0" onMouseClicked="#onViewClick" pickOnBounds="true" preserveRatio="true" style="-fx-fill: white;">
+         <image>
+            <Image url="@images/imatlogowhite.png" />
+         </image></ImageView>
+      <Text layoutX="153.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" styleClass="h1" text="Email: imat@imat.se" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="180.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" styleClass="h1" text="Tel: 999-99999" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="152.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" styleClass="h1" text="Fax: (123)-456 7890" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="912.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" styleClass="h1" text="Du kan inte stava DIAMANT utan iMat!" textAlignment="CENTER" wrappingWidth="389.469970703125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</fx:root>

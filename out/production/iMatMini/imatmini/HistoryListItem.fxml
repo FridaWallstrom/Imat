@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="164.0" prefWidth="829.0" stylesheets="@style.css" type="AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="47.0" layoutY="44.0" styleClass="h3" text="Ordernummer:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="orderNumber" layoutX="69.0" layoutY="82.0" styleClass="h3" text="1213456">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="44.0" styleClass="h3" text="Datum:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="orderDate" layoutX="270.0" layoutY="82.0" styleClass="h3" text="01-04-2024">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="42.0" styleClass="h3" text="Total kostnad:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="orderCost" layoutX="493.0" layoutY="86.0" styleClass="h3" text="212 kr">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="733.0" layoutY="57.0" mnemonicParsing="false" onMouseClicked="#enterOrderDetails" text="&gt;">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <styleClass>
+            <String fx:value="h2" />
+            <String fx:value="base_button" />
+         </styleClass>
+      </Button>
+   </children>
+</fx:root>

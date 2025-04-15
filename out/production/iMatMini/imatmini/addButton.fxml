@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="40.0" prefWidth="160.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="imatmini.AddButtonController">
+   <children>
+      <StackPane fx:id="stack" layoutX="3.0" layoutY="13.0" prefHeight="40.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Group fx:id="backAddGroup">
+               <children>
+                  <Label fx:id="InlineItemAmount" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" prefHeight="50.0" prefWidth="65.0" style="-fx-border-color: black; -fx-background-color: #ccc;" styleClass="h2" text="2" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="InlineItemDecreaseAmount" mnemonicParsing="false" onMouseClicked="#DecreaseAmountOfProduct" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: black; -fx-padding: 0; -fx-text-fill: black;" text="-">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="h1" />
+                        <String fx:value="base_button" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="InlineItemAddAmount" layoutX="112.0" mnemonicParsing="false" onMouseClicked="#IncreaseAmountOfProduct" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: black; -fx-padding: 0; -fx-text-fill: black;" text="+">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="h1" />
+                        <String fx:value="base_button" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </Group>
+            <Button fx:id="frontButton" mnemonicParsing="false" onMouseClicked="#openAdd" prefHeight="51.0" prefWidth="166.0" text="Lägg till">
+               <styleClass>
+                  <String fx:value="base_button" />
+                  <String fx:value="h2" />
+               </styleClass>
+            </Button>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
